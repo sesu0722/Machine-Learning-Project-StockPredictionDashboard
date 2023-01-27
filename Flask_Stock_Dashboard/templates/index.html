@@ -1,0 +1,120 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 4</title>
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/site.css">
+ 
+  
+</head>
+
+  <body class="text-center" >
+      <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+          <header class="masthead">
+            <div class="inner" >
+              <h3 class="masthead-brand">Stock Prediction App</h3>
+              <!--<nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">Home</a>
+                <nav>-->
+            </div>
+          </header>
+          <div id="widgetContent"  style="background-image:url(../static/image/background.png)">
+            <main role="main" class="inner">
+              <h1 class="cover-heading">Stock Data</h1>
+              <p class="lead">A Python and Flask based Stock Quote Module</p>
+              <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+              <div class="row">
+              <div class="input-group mb-3">
+                <input id="symbol",type="text" class="form-control" placeholder="Enter Stock Symbol" aria-label="Stock" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" onclick="site.SubmitForm();">Search</button>
+                </div>
+              </div>
+              
+              <div id="chart_container"></div>
+              <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+             
+
+
+              <div id="container">
+                <h1 class="cover-heading">Price prediction</h1>
+                
+                <!--<p id="pass">{{symbol }}</p>
+                <p id="pass">Accuracy: {{accuracy}}</p>
+                <p>Prediction: {{arima_forecast_df}}</p>
+                <p>{{mse}}</p>
+                <p>{{ mae }}</p>-->
+                <img
+                src="/static/image/arima_train_test_pred_forecast.png"
+                class="img-responsive"
+                alt="Model image"
+                width="640" height="360"
+                />
+                <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                <img
+                src="/static/image/arima_test_pred_forecast.png"
+                class="img-responsive"
+                alt="Model image"
+                width="640" height="360"
+                />
+                <p>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</p>
+                <img
+                src="/static/image/predictable.png"
+                class="img-responsive"
+                alt="Model image"
+                width="300" height="350"
+                />
+              <script>
+              
+              </script>
+              </div>
+              
+           
+          </div>
+         
+          </main>
+
+        </div>
+          
+        <div class="col-md-12">
+          <center>
+          <h3>
+          <a href="https://github.com/helleborus22/Machine-Learning-Project4">Back To GitHub Repository</a>
+          </h3>
+        </center>
+        </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+		<script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+    <script src="../static/js/site.js"></script>
+   <!---- <script src="../model.py"></script>-->
+  
+
+  </body>
+</html>
+
